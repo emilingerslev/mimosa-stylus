@@ -30,6 +30,7 @@ stylus:
 ```
 
 * `lib`: You may want to use this module but may not be ready to use the latest version of Stylus. Using the `lib` property you can provide a specific version of Stylus if the one being used by this module isn't to your liking. To provide a specific version, you must have it `npm install`ed into your project and then provide it to `lib`. For instance: `lib: require('stylus')`.
+* `extensions`: an array of strings, the extensions of your CoffeeScript files.
 * `use`: an array of strings, a means for plugins to be included in Stylus compilation.
 * `import`: an array of strings, import resources at compile time rather than in your stylesheet.
 * `define`:  an object, define variables programmtically instead of in your stylesheet.
