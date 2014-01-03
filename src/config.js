@@ -45,7 +45,7 @@ exports.validate = function( config, validators ) {
     validators.ifExistsIsArrayOfStrings( errors, "stylus.import", config.stylus.import );
     validators.ifExistsIsArrayOfStrings( errors, "stylus.includes", config.stylus.includes );
 
-    if ( validators.ifExistsIsArrayOfStrings(errors, "stylus.use", config.stylus.use) )
+    if ( validators.ifExistsIsArrayOfStrings(errors, "stylus.use", config.stylus.use) ) {
 
       config.stylus.resolvedUse = [];
       var projectNodeModules = path.resolve( process.cwd(), 'node_modules' );
@@ -67,7 +67,7 @@ exports.validate = function( config, validators ) {
           config.stylus.resolvedUse.push( lib() );
         }
       });
-
+    }
   }
 
   return errors;
