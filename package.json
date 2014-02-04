@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "nib": "1.0.1",
-    "stylus": "0.41.3",
+    "stylus": "0.42.2",
     "lodash": "2.4.1",
     "logmimosa": "0.6.0"
   },
